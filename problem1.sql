@@ -1,1 +1,1 @@
-CREATE TABLE post(id INT PRIMARY KEY NOT NULL, post text, user_fk FOREIGN KEY INT REFERENCES site_user(id) );
+CREATE TABLE post(id INT PRIMARY KEY NOT NULL, post text, user_fk INT REFERENCES site_user(id) );
