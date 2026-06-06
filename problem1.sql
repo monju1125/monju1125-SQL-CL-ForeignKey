@@ -1,1 +1,1 @@
-CREATE TABLE post(id INT PRIMARY KEY NOT NULL, post text(100), FOREIGN KEY(user_fk) INT REFERENCES site_user(id) ON DELETE CASCADE );
+CREATE TABLE post(id INT PRIMARY KEY NOT NULL, post text(100), user_fk INT, FOREIGN KEY(user_fk) REFERENCES site_user(id) );
